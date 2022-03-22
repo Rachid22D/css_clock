@@ -1,0 +1,262 @@
+* {
+
+  box-sizing: border-box;
+
+}
+
+body {
+
+  font-size: 15pt;
+
+}
+
+.hours {
+
+  width: 300px;
+
+  height: 300px;
+
+  position: relative;
+
+  background-color: #000;
+
+  margin: 100px auto;
+
+  border-radius: 50%;
+
+}
+
+.houre {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  left: 0;
+
+  position: absolute;
+
+  top: 50%;
+
+  margin-top: -3px;
+
+  padding: 0;
+
+  width: 100%;
+
+  height: 6px;
+
+  color: red;
+
+  background-image: linear-gradient(to right, blue 3%, transparent 3%, transparent 97%, blue 97%)
+
+}
+
+.houre div {
+
+  margin: 15px;
+
+}
+
+.one {
+
+  transform: rotate(calc(180deg/-3))
+
+}
+
+.one div {
+
+  transform: rotate(calc(180deg/3))
+
+}
+
+.two {
+
+  transform: rotate(calc(180deg/3))
+
+}
+
+.two div {
+
+  transform: rotate(calc(180deg/-3))
+
+}
+
+.three {
+
+  transform: rotate(calc(90deg/-3))
+
+}
+
+.three div {
+
+  transform: rotate(calc(90deg/3))
+
+}
+
+.foure {
+
+  transform: rotate(calc(90deg/3))
+
+}
+
+.foure div {
+
+  transform: rotate(calc(-90deg/3))
+
+}
+
+.five {}
+
+.six {
+
+  transform: rotate(90deg);
+
+}
+
+.six div {
+
+  transform: rotate(-90deg)
+
+}
+
+.center {
+
+  position: absolute;
+
+  width: 40px;
+
+  height: 40px;
+
+  background-color: #B9550C;
+
+  top: 50%;
+
+  left: 50%;
+
+  margin-top: -20px;
+
+  margin-left: -20px;
+
+  border-radius: 50%;
+
+  z-index: 1;
+
+}
+
+.pointer-s {
+
+  position: absolute;
+
+  width: 2px;
+
+  height: 110px;
+
+  background-color: #fff;
+
+  top: 40px;
+
+  left: 50%;
+
+  margin-left: -1px;
+
+  transform-origin: bottom;
+
+  animation-name: pointer-sc;
+
+  animation-duration: 60s;
+
+  animation-iteration-count: infinite;
+
+  animation-timing-function: linear
+
+}
+
+@keyframes pointer-sc {
+
+  to {
+
+    transform: rotate(360deg)
+
+  }
+
+}
+
+.pointer-m {
+
+  position: absolute;
+
+  width: 4px;
+
+  height: 100px;
+
+  background-color: #6AC4CB;
+
+  top: 50px;
+
+  left: 50%;
+
+  margin-left: -2px;
+
+  transform-origin: bottom;
+
+  animation-name: pointer-mn;
+
+  animation-duration: 3600s;
+
+  animation-iteration-count: infinite;
+
+  animation-timing-function: linear
+
+}
+
+@keyframes pointer-mn {
+
+  to {
+
+    transform: rotate(360deg)
+
+  }
+
+}
+
+.pointer-h {
+
+  position: absolute;
+
+  width: 6px;
+
+  height: 100px;
+
+  background-color: #B21110;
+
+  top: 50px;
+
+  left: 50%;
+
+  margin-left: -3px;
+
+  transform-origin: bottom;
+
+  animation-name: pointer-hr;
+
+  animation-duration: 43200s;
+
+  animation-iteration-count: infinite;
+
+  animation-timing-function: linear
+
+}
+
+@keyframes pointer-hr {
+
+  to {
+
+    transform: rotate(360deg)
+
+  }
+
+}
+
